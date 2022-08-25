@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Forms from "./components/Forms";
+import MyProgressBar from "./components/MyProgressBar";
+import NextButton from "./components/NextButton";
 
 function App() {
+  const [page, setPage] = useState(1);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mt-5">
+      <h1 className="text-center">
+        <i className="fas fa-leaf text-primary"></i> Eden
+      </h1>
+      <MyProgressBar page={page} />
+      <Forms page={page} />
+      <NextButton page={page} setPage={setPage} />
     </div>
   );
 }
