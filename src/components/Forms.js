@@ -27,7 +27,7 @@ export default function Forms({ page }) {
         {page === 1 && (
           <div>
             <div className="text-center">
-              <h2 className="h3">Welcome! First things first...</h2>
+              <h2>Welcome! First things first...</h2>
               <p className="text-muted fontsize2">
                 You can always change them later.
               </p>
@@ -71,7 +71,9 @@ export default function Forms({ page }) {
         {page === 2 && (
           <div>
             <div className="text-center">
-              <h2 className="h3">Let's set up a home htmlFor all your work</h2>
+              <h2 className="h3 mt-2">
+                Let's set up a home htmlFor all your work
+              </h2>
               <p className="text-muted fontsize2">
                 You can always create another workspace later.
               </p>
@@ -103,7 +105,7 @@ export default function Forms({ page }) {
                 <div className="container">
                   <div className="row">
                     <div className="col-auto bg-light text-center border rounded-start">
-                      <p className="text-muted m-0 pt-2 fontsize2">
+                      <p className="text-muted m-0 pt-1 fontsize2">
                         www.eden.com/
                       </p>
                     </div>
@@ -125,7 +127,7 @@ export default function Forms({ page }) {
         {page === 3 && (
           <div>
             <div className="text-center">
-              <h2 className="h3">How are you planning to use Eden?</h2>
+              <h2>How are you planning to use Eden?</h2>
               <p className="text-muted fontsize2 mb-3">
                 We'll streamline your setup experience accordingly.
               </p>
@@ -133,7 +135,7 @@ export default function Forms({ page }) {
             <div className="width m-auto">
               <div className="my-3">
                 <div className="container-lg px-0">
-                  <div className="row gx-3">
+                  <div className="row gx-4">
                     <div className="col">
                       <div
                         className={`card ${
@@ -145,11 +147,11 @@ export default function Forms({ page }) {
                           onClick={() => setPlan("For myself")}
                         >
                           <i
-                            className={`fas fa-user-alt fs-3 mb-3 ${
+                            className={`bi bi-person-fill fs-2 ${
                               plan === "For myself" ? "text-primary" : ""
                             }`}
                           ></i>
-                          <h6 className="card-title pb-1 fontsize2 fw-bold">
+                          <h6 className="card-title pb-1 pt-3 fontsize2 fw-bold">
                             For myself
                           </h6>
                           <p className="card-text text-muted fontsize1">
@@ -169,11 +171,11 @@ export default function Forms({ page }) {
                           onClick={() => setPlan("With my team")}
                         >
                           <i
-                            className={`fas fa-users fs-3 mb-3 ${
+                            className={`bi bi-people-fill fs-2 ${
                               plan !== "For myself" ? "text-primary" : ""
                             }`}
                           ></i>
-                          <h6 className="card-title pb-1 xyz fw-bold fontsize2">
+                          <h6 className="card-title pt-3 pb-1 xyz fw-bold fontsize2">
                             With my team
                           </h6>
                           <p className="card-text text-muted fontsize1">

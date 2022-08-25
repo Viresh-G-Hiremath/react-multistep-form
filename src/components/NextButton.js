@@ -7,7 +7,7 @@ export default function NextButton({ page, setPage }) {
         <div className="width m-auto">
           <button
             type="submit"
-            className="btn btn-primary w-100"
+            className="btn btn-primary w-100 mt-2"
             onClick={() => setPage(page + 1)}
           >
             Create Workspace
